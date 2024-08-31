@@ -1,0 +1,39 @@
+.payment_page .section-header {
+  margin: 4% 0 0 4%;
+  padding: 1%;
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+.payment_page .pageNo {
+  font-size: 13px;
+  margin-top: 8%;
+}
+.payment_page .no {
+  font-weight: 600;
+}
+.payment_page .section-title h3 {
+  font-size: 32px;
+}
+.paymentOptions {
+  display: block;
+  margin: auto;
+  margin-top: 1%;
+  width: 40%;
+}
+.paymentOptions h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .payment_page .section-header,
+  .paymentOptions .section-title {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .payment_page .paymentOptions {
+    width: 80%;
+  }
+}

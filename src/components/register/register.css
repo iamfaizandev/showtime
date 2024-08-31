@@ -1,0 +1,24 @@
+form .ready_text {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.9;
+  margin-bottom: 1%;
+}
+
+form .bg-dark-shade::placeholder {
+  color: rgb(187, 183, 183);
+}
+#register_group {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get_started {
+  font-weight: 600;
+}
+.loading {
+  display: block;
+  width: 90%;
+  margin: auto;
+}

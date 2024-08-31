@@ -1,0 +1,98 @@
+.tv-section {
+  height: 100%;
+  border-top: 8px solid rgba(79, 78, 78, 0.795);
+  border-bottom: 8px solid rgba(79, 78, 78, 0.795);
+  background-color: black;
+  overflow: hidden;
+}
+.tv-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  color: white;
+}
+.left_text {
+  display: block;
+  width: 50vw;
+  margin: auto;
+  margin-left: 10%;
+}
+.left_text .main_text {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.left_text .small_text {
+  font-weight: 840;
+  font-size: 1.5rem;
+}
+/* //// tv css */
+.tv_right {
+  width: 60vw;
+  height: 60vh;
+  position: relative;
+  z-index: 1;
+}
+.tv-bg {
+  width: 70%;
+  height: 100%;
+  background-image: url(../../assets/tv.png);
+  background-size: cover;
+}
+video {
+  position: absolute;
+  z-index: -1;
+  width: 51%;
+  left: 9%;
+  height: 60vh;
+  top: 5%;
+  bottom: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .tv-container {
+    grid-template-columns: auto;
+    width: 100%;
+  }
+  .tv-section {
+    height: 70vh;
+    overflow: hidden;
+  }
+  .left_text {
+    display: block;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .left_text .main_text {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .left_text .small_text {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .tv_right {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+  }
+  .tv-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/tv.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  video {
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+    left: 13%;
+    height: 30vh;
+  }
+}

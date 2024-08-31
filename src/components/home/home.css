@@ -1,0 +1,22 @@
+.bg-image {
+  background-image: url(../../assets/showtime.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-shade {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    background-image: url(../../assets/netflix_bg.jpg);
+    background-size: cover;
+    height: 55vh;
+  }
+  .bg-shade {
+    height: 55vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

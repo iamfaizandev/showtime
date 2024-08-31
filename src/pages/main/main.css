@@ -1,0 +1,181 @@
+/* Global styles for the cards */
+.movies-section {
+  padding: 10px;
+  color: white;
+}
+
+.MuiCard-root {
+  margin: 15px;
+  margin-bottom: 30px; /* Adds space at the bottom of each card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* Ensures content overlay works correctly */
+  overflow: hidden; /* Hide any overflow for a clean look */
+}
+
+.MuiCardMedia-root {
+  height: 90%; /* Image takes up the full height of the card */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for image */
+  width: 100%; /* Ensure full width coverage */
+}
+
+.MuiCardContent-root {
+  text-align: center;
+  padding: 10px 15px;
+  flex-grow: 1; /* Ensures content takes up the available space in the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  color: white; /* White text color for better contrast */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Show content on hover */
+.MuiCard-root:hover .MuiCardContent-root {
+  opacity: 1;
+  visibility: visible;
+}
+
+.textSkeleton {
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 40%;
+}
+
+.movieCard {
+  cursor: pointer;
+  transition: transform 0.8s ease-in-out;
+}
+
+.cardImg {
+  width: max-content; /* Ensure the image takes up the full width of the card */
+  height: auto; /* Ensure the image takes up the full height of the card */
+  object-fit: fill; /* Make sure the image covers the entire card without distortion */
+}
+.imageContainer {
+  position: relative;
+}
+
+.cardImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.overlayButton {
+  position: absolute;
+  top: 33%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-transform: none; /* Disable uppercase transformation */
+  transition: background-color 0.3s ease;
+}
+
+.overlayButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* top of page */
+.movies-section .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.user-greeting {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.search-input {
+  width: 50%;
+}
+
+.sort-select {
+  margin: 0;
+  width: 200px;
+}
+
+.movies-section {
+  padding: 20px;
+}
+
+/* Responsive grid spacing */
+@media (max-width: 1200px) {
+  .MuiGrid-item {
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+  }
+}
+
+@media (max-width: 960px) {
+  .MuiGrid-item {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .user-greeting {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .search-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  .sort-select {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .sortPhone {
+    margin-left: 50%;
+  }
+  .movies-section {
+    padding: 10px;
+  }
+
+  .movieCard {
+    margin: 10px;
+  }
+  .MuiGrid-item {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}

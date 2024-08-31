@@ -1,0 +1,121 @@
+this code before without modify with fakestore api user 
+
+import { Link, useNavigate } from "react-router-dom";
+import "./login.css";
+import { useCookies } from "react-cookie";
+import { useEffect, useState } from "react";
+import { Button } from "@mui/material";
+import { useFormik } from "formik";
+import axios from "axios";
+import { PageFooter } from "../footer/pageFooter";
+import { SignInHeader } from "../signInHeader/signInHeader";
+
+export function Login() {
+  let navigate = useNavigate();
+  const [users, setUsers] = useState([{ Email: "", Password: "" }]);
+  const [userError, setUserError] = useState("");
+  const [cookies, setCookie, removeCookie] = useCookies([
+    "userEmail",
+    "userPassword",
+  ]);
+
+  const formik = useFormik({
+    initialValues: {
+      Email: "",
+      Password: "",
+    },
+    onSubmit: (values) => {
+      axios.get(`https://fakestoreapi.com/users`).then((res) => {
+        console.log(res.data);
+        // let userD = res.data.find((item) => item.Password === values.Password);
+        let userD = res.data.find(
+          (item) =>
+            item.Email === values.Email && item.Password === values.Password
+        );
+        if (
+          userD.Email === values.Email &&
+          userD.Password === values.Password
+        ) {
+          setCookie("userEmail", values.Email, [
+            { expires: new Date("2024-12-29") },
+          ]);
+          setCookie("userPassword", values.Password, [
+            { expires: new Date("2024-12-29") },
+          ]);
+          navigate("/signupnxt");
+        } else {
+          setUserError("Invalid Password");
+        }
+        // if (userD.Password === values.Password) {
+        //   setCookie("userName", values.UserName, [
+        //     { expires: new Date("2024-12-02") },
+        //   ]);
+        //
+        // } else {
+        //
+        // }
+      });
+    },
+  });
+
+  useEffect(() => {
+    axios.get("http://127.0.0.1:2024/users").then((res) => {
+      setUsers(res.data);
+    });
+  }, []);
+  return (
+    <div className="login_page">
+      <SignInHeader />
+      <section className="login-section">
+        <div className="section-body">
+          <div className="login-header">
+            <div className="steps">
+              STEP <b>1</b> OF <b>3</b>
+            </div>
+            <div className="title">
+              <h1>Welcome back! Joining Netflix is easy.</h1>
+            </div>
+          </div>
+          <form action="" className="form" onSubmit={formik.handleSubmit}>
+            <div className="form-header">
+              Enter your password and you'll be watching in no time.
+            </div>
+            {/* <div className="email_text  mt-4">
+            </div> */}
+            <input
+              onChange={formik.handleChange}
+              className="form-control mt"
+              type="email"
+              placeholder="Enter Your Email Again"
+              name="Email"
+            />
+            <input
+              onChange={formik.handleChange}
+              className="form-control mt-3"
+              type="password"
+              placeholder="Enter Your Password"
+              name="Password"
+            />
+            <div className="text-danger mt-2 mb-2">{userError}</div>
+            <div className="link">
+              <Link className="link_text">Forgot Your Password?</Link>
+            </div>
+            <Button
+              type="submit"
+              variant="contained"
+              color="error"
+              className="Next mt-4"
+              fullWidth
+            >
+              <span className="text fs-4">Next</span>
+            </Button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <PageFooter />
+      </footer>
+    </div>
+  );
+}
+

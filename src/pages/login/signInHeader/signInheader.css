@@ -1,0 +1,32 @@
+.signIn-header header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1% 4% 0.5% 1%;
+}
+
+.leftText {
+  font-size: 18px;
+  font-weight: 600;
+}
+.textLink {
+  text-decoration: none;
+  color: black;
+}
+.textLink:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  .signIn-header header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .signIn-header .leftText a {
+    font-size: 30px;
+  }
+  .signIn-header .brandLogo img {
+    width: 33%;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,90 @@
+.downloadShow_section {
+  background-color: black;
+  height: 90vh;
+  border-bottom: 4px solid gray;
+  color: white;
+}
+.downloadshow_container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.downloadShow_section .text {
+  margin-top: 15%;
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 3%;
+  width: 100%;
+}
+.downloadShow_section .small_text {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.mobile {
+  width: 100%;
+}
+.mobile_container {
+  position: relative;
+}
+.mobile_container img {
+  width: 100%;
+}
+.small_card {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 55%;
+  height: 15vh;
+  min-width: 15rem;
+  padding: 0.29rem 0.65rem;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+  z-index: 1;
+}
+.card_center-item {
+  width: 100%;
+}
+.card_left-item img {
+  width: 60%;
+}
+@media only screen and (max-width: 600px) {
+  .downloadshow_container {
+    flex-direction: column;
+  }
+  .downloadShow_section {
+    background-color: black;
+    height: 60vh;
+    border-bottom: 4px solid gray;
+    color: white;
+  }
+  .downloadShow_section .text {
+    margin-top: 10%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 3%;
+    width: 100%;
+    text-align: center;
+  }
+  .downloadShow_section .small_text {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,61 @@
+.payment-option {
+  width: 35vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-container {
+  margin-top: 20px;
+}
+
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-info {
+  margin-top: 10px;
+}
+
+.form-controll {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.expiry-cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-now-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .payment-option {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  .payment-container {
+  }
+}

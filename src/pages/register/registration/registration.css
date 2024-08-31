@@ -1,0 +1,38 @@
+.register_page {
+  background-color: rgb(255, 255, 255);
+}
+.register_page-section {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+  margin-top: 7%;
+}
+.register_page section {
+  margin-bottom: 10%;
+}
+.register_page-section .bg img {
+  width: 22vw;
+}
+.section-header {
+  line-height: 19px;
+  width: 30vw;
+  margin-top: 3%;
+}
+.section-header .steps {
+  font-size: 13px;
+  text-align: inherit;
+}
+.title {
+  font-size: 32px;
+}
+.register-main {
+  width: 20vw;
+}
+.register-main .small {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}

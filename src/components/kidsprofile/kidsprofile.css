@@ -1,0 +1,51 @@
+.kidsprofile_section {
+  border-bottom: 4px solid grey;
+  border-top: 4px solid grey;
+  height: 90vh;
+  background-color: black;
+  color: white;
+}
+.kids_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 6%;
+}
+.kids_container {
+  width: 100%;
+}
+.kids_container img {
+  width: 43vw;
+}
+
+.kids_text .main_text {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.kids_text .small_text {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  .kidsprofile_section {
+    height: 60vh;
+  }
+  .kids_container {
+    flex-direction: column-reverse;
+  }
+  .kids_container img {
+    width: 99vw;
+    height: 40vh;
+  }
+  .kids_text .main_text {
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  .kids_text .small_text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}

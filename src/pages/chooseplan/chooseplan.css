@@ -1,0 +1,97 @@
+.Choose-plan_page .section-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  align-content: center;
+  max-width: 440px;
+  text-align: center;
+}
+.section-header .steps h1 {
+  font-size: 32px;
+}
+.Choose-plan_page .checkIcon {
+  font-size: 3rem;
+}
+.checkmark-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.Choose-plan_page ul li {
+  padding: 5px 0px;
+  margin: 0px;
+  list-style: none;
+  align-items: start;
+}
+.checkmark-list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+}
+.checkmark-text {
+  font-size: 19px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.checkmark-list .checkmark-text {
+  margin-left: 4%;
+}
+.Choose-plan_page .checkIcons {
+  flex: none;
+}
+/* .Choose-plan_page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+}
+.Choose-plan_page .brand-logo img {
+  width: 20%;
+}
+.Choose-plan_page.signOut {
+  width: 100%;
+}
+.Choose-plan_page .signOut .link {
+  font-weight: 700;
+  color: black;
+  font-size: 1.3rem;
+}
+.border {
+  border-bottom: 2px solid gray;
+  width: 100%;
+}
+.Choose-plan_page section {
+  width: 25%;
+  margin: auto;
+  display: block;
+  margin-top: 2%;
+}
+.Choose-plan_page .icon {
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+.Choose-plan_page .pageno {
+  font-size: 0.8rem;
+}
+.Choose-plan_page .icons {
+  display: flex;
+  flex-direction: column;
+}
+.Choose-plan_page ul {
+  list-style-type: none;
+  font-size: 20px;
+} */
+
+@media only screen and (max-width: 600px) {
+  .Choose-plan_page footer {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .signBtn .button {
+    width: 55vw;
+    height: 6vh;
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+  }
+  .arrowIcon {
+    margin-bottom: 5%;
+  }
+}

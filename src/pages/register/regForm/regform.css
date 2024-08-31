@@ -1,0 +1,79 @@
+.login_page footer {
+  position: static;
+  bottom: 0;
+  width: 100vw;
+}
+.login_page .login-section {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.login_page .section-body {
+  width: 29vw;
+  height: 70vh;
+}
+.login_page .email_text {
+  word-wrap: break-word;
+  font-weight: 500;
+}
+.login_page .link {
+  margin-top: 4%;
+}
+.login_page .link_text {
+  text-decoration: none;
+}
+.login_page .link_text:hover {
+  text-decoration: underline;
+}
+.login-section .names-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 0%;
+}
+.login_page .alert-container {
+  width: 70%;
+  position: fixed;
+  z-index: +999;
+  left: 20%;
+}
+.regForm-header h1 {
+  font-size: 32px;
+}
+.regForm-header span {
+  font-size: 13px;
+}
+.regForm-title div {
+  font-size: 18px;
+}
+.regForm-title span {
+  font-size: 18px;
+}
+.alert {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .alert {
+    width: 100%;
+  }
+  .login-section {
+    width: 100%;
+  }
+  .login_page .section-body {
+    width: 90vw;
+    height: 70vh;
+  }
+  .steps,
+  .title,
+  .form-header,
+  .form-control {
+    margin-bottom: 5%;
+  }
+  .login_page .alert-container {
+    width: 90%;
+    position: fixed;
+    z-index: +999;
+    left: 0%;
+  }
+}

@@ -1,0 +1,147 @@
+import { SignInHeader } from "../login/signInHeader/signInHeader";
+import { PageFooter } from "../login/footer/pageFooter";
+import "./regform.css";
+import { useNavigate } from "react-router-dom";
+import { useFormik } from "formik";
+import axios from "axios";
+import { useCookies } from "react-cookie";
+
+export function RegForm() {
+  const [cookies, setCookie, removeCookie] = useCookies([
+    "userEmail",
+    "userPassword",
+  ]);
+  let navigate = useNavigate();
+  const formik = useFormik({
+    initialValues: {
+      Email: "",
+      Password: "",
+    },
+    onSubmit: (values) => {
+      axios.post("http://127.0.0.1:2024/registeruser", values);
+      console.log(values);
+      setCookie(["userEmail"], values.Email, [
+        {
+          expires: new Date("2024-12-29"),
+        },
+      ]);
+      setCookie(["userPassword"], values.Password, [
+        {
+          expires: new Date("2024-12-29"),
+        },
+      ]);
+      navigate("/verifyemail");
+    },
+  });
+
+  return (
+    <div className="regForm">
+      <div>
+        <SignInHeader />
+      </div>
+      <section className="regForm-section">
+        <main className="regForm-main">
+          <form
+            action=""
+            onSubmit={formik.handleSubmit}
+            className="form regForm-form"
+          >
+            <div className="regForm-header">
+              <span>
+                STEP <b>1</b> OF <b>3</b>
+              </span>
+              <h1>Create a password to start your membership</h1>
+            </div>
+            <div className="regForm-title">
+              <div>Just a few more steps and you're done!</div>
+              <span>We hate paperwork, too.</span>
+            </div>
+            <ul className="regForm-inputs">
+              <li>
+                <div>
+                  <label htmlFor="Email" className="form-label labelStyle">
+                    Email
+                  </label>
+                  <div className="input-box">
+                    <div className="text-danger"> {cookies["userEmail"]}</div>
+                    <input
+                      type="email"
+                      onChange={formik.handleChange}
+                      name="Email"
+                      className="inputStyle"
+                    />
+                  </div>
+
+                  {/* <div className="emailWarning">Email Warning</div> */}
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label htmlFor="Password" className="form-label labelStyle">
+                    Password
+                  </label>
+                  <div>
+                    <input
+                      type="password"
+                      onChange={formik.handleChange}
+                      name="Password"
+                      className="inputStyle"
+                    />
+                  </div>
+                  {/* <div className="passwordWarning">Password Warning</div> */}
+                </div>
+              </li>
+            </ul>
+            <button className=" RegBtn">NEXT</button>
+          </form>
+        </main>
+      </section>
+      <footer>
+        <PageFooter />
+      </footer>
+    </div>
+  );
+}
+//////////////////////////////////////////////////////////////////////////////////
+.regForm-section {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  align-content: center;
+}
+.regForm-main {
+  margin-top: 5%;
+}
+.inputStyle {
+  width: 60%;
+  padding: 2%;
+  height: 45px;
+  border: 2px solid rgb(5, 84, 163);
+}
+.input-border {
+  /* border: 1px solid rgb(5, 84, 163); */
+  width: 60%;
+}
+.regForm-header h1 {
+  font-size: 32px;
+}
+.regForm-header span {
+  font-size: 13px;
+}
+.regForm-title div {
+  font-size: 18px;
+}
+.regForm-title span {
+  font-size: 18px;
+}
+.regForm-main .RegBtn {
+  width: 60%;
+  margin-left: 4%;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  min-height: 64px;
+  background-color: #e50914;
+  color: #fff;
+}

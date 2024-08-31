@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.header .bg-transparent {
+  cursor: pointer;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Use rgba for better transparency handling */
+  border: 1px solid whitesmoke;
+  color: white;
+  border-radius: 10%; /* Consider using px or % */
+}
+option {
+  background-color: black;
+}
+.brand-div img {
+  width: 10vw;
+}
+
+.brand-div {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+/* header.css */
+
+/* Use a more specific media query */
+@media (max-width: 600px) {
+  .brand-div img {
+    width: 30vw;
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 4%;
+  }
+}

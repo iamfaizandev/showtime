@@ -1,0 +1,37 @@
+.plan_page .section-header {
+  margin: 4% 0 0 4%;
+  padding: 1%;
+}
+.plan_page .pageNo {
+  font-size: 13px;
+}
+.pageNo .no {
+  font-weight: 600;
+}
+.plan_page .section-title h3 {
+  font-size: 32px;
+}
+.section-footer {
+  padding: 5%;
+}
+.section-footer .para {
+  color: #737373;
+  display: block;
+  font-size: 13px;
+  padding: 0 16px;
+  text-align: justify;
+}
+.NextBtn {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+@media only screen and (max-width: 600px) {
+  .plans-list .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .plan_page .section-header {
+    width: 100%;
+  }
+}

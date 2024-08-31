@@ -1,0 +1,31 @@
+[
+  {
+    "title": "FAQ",
+    "link": "https://help.netflix.com/en/node/412"
+  },
+  {
+    "title": "Help Center",
+    "link": "https://help.netflix.com/en/"
+  },
+
+  {
+    "title": "Oneflix Shop",
+    "link": "https://www.netflix.shop/"
+  },
+  {
+    "title": "Terms of Use",
+    "link": "https://help.netflix.com/legal/termsofuse"
+  },
+  {
+    "title": "Privacy",
+    "link": "https://help.netflix.com/legal/privacy"
+  },
+  {
+    "title": "Cookie Preferences",
+    "link": "https://help.netflix.com/en/"
+  },
+  {
+    "title": "Corporate Information",
+    "link": "https://help.netflix.com/legal/corpinfo"
+  }
+]

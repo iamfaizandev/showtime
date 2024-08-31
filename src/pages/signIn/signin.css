@@ -1,0 +1,219 @@
+/* .signIn-Page .header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.signIn-Page .header {
+  padding-top: 0.5%;
+}
+.signIn-Page {
+  background-size: cover;
+  background-image: url(../../assets/netflix_bg.jpg);
+}
+.bg-shade {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0%;
+}
+.signIn-Page .card {
+  width: 35vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  display: block;
+}
+.signIn-Page .input-border {
+  border: 1px solid rgb(255, 255, 255);
+  width: 100%;
+}
+.signIn-Page form {
+  color: white;
+}
+
+form .css-s4mos6-MuiFormLabel-root-MuiInputLabel-root {
+  color: white;
+}
+.password-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+  color: white;
+}
+form .error_text {
+  font-size: 0.9rem;
+}
+
+form header .form_title {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 700;
+}
+form .link {
+  text-decoration: none;
+}
+form .link:hover {
+  text-decoration: underline;
+}
+.signIn-Page .footer {
+}
+.signIn-Page .alert-container {
+  width: 70%;
+  position: fixed;
+  z-index: +999;
+  left: 20%;
+}
+@media only screen and (max-width: 600px) {
+  .signIn-Page .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  .brand-logo img {
+    width: 30vw;
+  }
+  .signIn-Page .header {
+    padding-top: 5%;
+  }
+  .bg-img {
+    background-image: url(../../assets/netflix_bg.jpg);
+    height: 95vh;
+  }
+  .bg-shade {
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .signIn-Page .card {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    display: block;
+    margin-top: 20%;
+  }
+  .signIn-Page .input-border {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+  }
+  .signIn-Page form {
+    color: white;
+  }
+
+  form .css-s4mos6-MuiFormLabel-root-MuiInputLabel-root {
+    color: white;
+  }
+  .password-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+    color: white;
+  }
+  form .error_text {
+    font-size: 0.9rem;
+  }
+
+  form header .form_title {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  form .link {
+    text-decoration: none;
+  }
+  form .link:hover {
+    text-decoration: underline;
+  }
+} */
+.signIn-Page {
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../../assets/netflix_bg.jpg);
+}
+.signIn-Page .bg-shade {
+  position: relative;
+}
+.signIn-top .brand-div {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+.signIn-Page .brand-div img {
+  width: 15%;
+  margin-top: 2%;
+}
+.signIn-Page .card {
+  padding: 3%;
+  display: block;
+  width: 35vw;
+  height: 100%;
+  margin: auto;
+  margin-top: 1%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
+}
+.signIn-Page .alert-container {
+  position: absolute;
+  z-index: +999;
+  width: 30%;
+  right: 1%;
+  top: 0%;
+}
+.signIn-Page .card-title {
+  color: white;
+}
+.signIn-Page form input::placeholder {
+  color: white;
+}
+.signIn-Page .signin-form {
+  margin-top: 14%;
+}
+.signIn-Page input {
+  height: 10vh;
+  margin-bottom: 5%;
+  border: 1px solid grey;
+  border-radius: 0;
+}
+.signIn-Page .code-bg {
+  text-transform: lowercase;
+  font-size: 100%;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.signIn-Page .signin-form .forgotPassword {
+  text-align: center;
+  margin-top: 6%;
+}
+.signIn-Page .newreg {
+  text-decoration: none;
+  text-align: left;
+  margin-top: 6%;
+}
+@media only screen and (max-width: 600px) {
+  .signIn-Page {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../../assets/netflix_bg.jpg);
+  }
+  .signIn-Page .bg-shade {
+    height: 100vh;
+    position: relative;
+  }
+  .signIn-Page .card {
+    padding: 5%;
+    width: 90%;
+    height: auto;
+    margin-top: 15%;
+  }
+  .signIn-Page .card-title h3 {
+    font-size: 30px;
+    margin-top: 10%;
+  }
+  .signIn-Page .signIn-top .brand-div img {
+    width: 40%;
+  }
+  .signIn-top .brand-div {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .signIn-Page .signIn-btn {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}

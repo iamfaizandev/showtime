@@ -1,0 +1,22 @@
+.signout-header header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1% 4% 0.5% 1%;
+}
+.signout-header .brandLogo img {
+  width: 13%;
+  vertical-align: middle;
+}
+.leftText {
+  font-size: 18px;
+  font-weight: 600;
+}
+.textLink {
+  text-decoration: none;
+  color: black;
+}
+.textLink:hover {
+  text-decoration: underline;
+}

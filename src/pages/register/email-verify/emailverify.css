@@ -1,0 +1,45 @@
+.verify-section {
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+.verify-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+}
+.verify-section .roundBorder {
+  border: 3px solid #e50914;
+  border-radius: 50%;
+  color: #e50914;
+  height: 45px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 45px;
+  padding-top: 11%;
+}
+.verify-section .title {
+  font-size: 32px;
+}
+.verify-section .subHeader {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 12px;
+}
+.verify-section .btnContainer {
+  width: 100%;
+  margin-top: 2%;
+}
+.btnContainer button {
+  width: 30%;
+}
+.verify-section .steps {
+  text-align: center;
+}
+.verify-section .header {
+  display: block;
+}

@@ -1,0 +1,78 @@
+.planCards {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5%;
+  padding: 1%;
+  width: 24.5;
+}
+.plan-card {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 18px;
+}
+
+.plan-card:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px gainsboro;
+}
+
+.plan-card.selected {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px gainsboro;
+}
+.plan-card .header {
+  box-sizing: border-box;
+  border-radius: 18px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  margin: 4%;
+  padding: 10px 16px;
+  background: radial-gradient(
+      140.76% 131.96% at 100% 100%,
+      rgb(229, 9, 20) 0%,
+      rgba(74, 42, 150, 0.5) 73.57%,
+      rgba(74, 42, 150, 0) 100%
+    ),
+    rgb(29, 82, 157);
+}
+.plan-card .header .tick {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+ul li {
+  padding: 12.5px 0px;
+  margin: 0px;
+  list-style: none;
+  -webkit-box-align: left;
+  align-items: start;
+}
+ul li .li-title {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.53846;
+  color: rgb(118, 118, 118);
+  text-align: left;
+  margin-left: 7%;
+}
+.planCards ul li .plan-details {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  margin-left: 7%;
+}
+ul .border {
+  width: 85%;
+  display: block;
+  margin: auto;
+}

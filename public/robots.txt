@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /login
+Disallow: /signup
+Disallow: /account
+Disallow: /admin
+Disallow: /private
+Allow: / images
+
+Sitemap: https://showtimax.web.app/sitemap.xml

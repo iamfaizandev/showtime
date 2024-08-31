@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Premium",
+    "smallText": "4K + HDR",
+    "price": "₹649",
+    "sound": "Best",
+    "resolution": "4K (Ultra HD) + HDR",
+    "devices": "TV, computer, mobile phone, tablet",
+    "devicesametime": 4,
+    "downloadDevice": 6
+  },
+  {
+    "id": 2,
+    "name": "Standard",
+    "smallText": "1080p",
+    "price": "₹499",
+    "sound": "Great",
+    "resolution": "1080p (Full HD)",
+    "devices": "TV, computer, mobile phone, tablet",
+    "devicesametime": 2,
+    "downloadDevice": 2
+  },
+  {
+    "id": 3,
+    "name": "Basic",
+    "smallText": "720p",
+    "price": "₹199",
+    "sound": "Good",
+    "resolution": "720p (HD)",
+    "devices": "TV, computer, mobile phone, tablet",
+    "devicesametime": 1,
+    "downloadDevice": 1
+  },
+  {
+    "id": 4,
+    "name": "Mobile",
+    "smallText": "480p",
+    "price": "₹149",
+    "sound": "Fair",
+    "resolution": "480p",
+    "devices": "Mobile phone, tablet",
+    "devicesametime": 1,
+    "downloadDevice": 1
+  }
+]
